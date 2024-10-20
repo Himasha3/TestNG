@@ -5,12 +5,14 @@
   <test name="Test1">
     <classes>
       <class name="day1.pack.C1"/>
+      <class name="day1.pack.C2"/>
       
     </classes>
   </test> <!-- Test -->
   
   <test name="Test2">
     <classes>
+      <class name="day1.pack.C1"/>
       <class name="day1.pack.C2"/>
       
     </classes>

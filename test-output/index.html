@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">4 methods,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -105,6 +105,16 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="day1.pack.C1" class="method navigator-link" hash-for-method="abc">abc</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="day1.pack.C1" class="method navigator-link" hash-for-method="abc">abc</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="day1.pack.C2" class="method navigator-link" hash-for-method="xyz">xyz</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -137,6 +147,13 @@
                   <span class="method-name">xyz</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="xyz">
+                  </a> <!-- xyz -->
+                  <span class="method-name">xyz</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-passed -->
           <div class="suite-Suite-class-passed">
@@ -145,6 +162,13 @@
               <span class="class-name">day1.pack.C1</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="abc">
+                  </a> <!-- abc -->
+                  <span class="method-name">abc</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="abc">
@@ -167,10 +191,12 @@
   &lt;test thread-count=&quot;5&quot; name=&quot;Test1&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;day1.pack.C1&quot;/&gt;
+      &lt;class name=&quot;day1.pack.C2&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test1 --&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test2&quot;&gt;
     &lt;classes&gt;
+      &lt;class name=&quot;day1.pack.C1&quot;/&gt;
       &lt;class name=&quot;day1.pack.C2&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test2 --&gt;
@@ -185,10 +211,10 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test1 (1 class)</span>
+                <span class="test-name">Test1 (2 classes)</span>
               </li>
               <li>
-                <span class="test-name">Test2 (1 class)</span>
+                <span class="test-name">Test2 (2 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -214,20 +240,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'abc')
 data.setCell(0, 2, 'day1.pack.C1')
-data.setCell(0, 3, 10);
+data.setCell(0, 3, 12);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'xyz')
 data.setCell(1, 2, 'day1.pack.C2')
-data.setCell(1, 3, 2);
+data.setCell(1, 3, 3);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'xyz')
+data.setCell(2, 2, 'day1.pack.C2')
+data.setCell(2, 3, 2);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'abc')
+data.setCell(3, 2, 'day1.pack.C1')
+data.setCell(3, 3, 2);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 12 ms</span>
+              <span class="suite-total-time">Total running time: 19 ms</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -260,18 +294,40 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">abc</span>
-                <span class="method-start">32 ms</span>
+                <span class="method-start">33 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">day1.pack.C2</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">xyz</span>
-                <span class="method-start">135 ms</span>
+                <span class="method-start">50 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">at</span>
-                <span class="method-start">138 ms</span>
+                <span class="method-start">56 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">day1.pack.C1</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">bt</span>
+                <span class="method-start">154 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">abc</span>
+                <span class="method-start">155 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">day1.pack.C2</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">xyz</span>
+                <span class="method-start">159 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">at</span>
+                <span class="method-start">163 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
