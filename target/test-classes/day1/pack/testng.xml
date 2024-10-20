@@ -6,6 +6,7 @@
     <classes>
       <class name="day1.pack.C1"/>
       <class name="day1.pack.C2"/>
+      <class name="day1.pack.C3"/>
       
     </classes>
   </test> <!-- Test -->
@@ -14,6 +15,7 @@
     <classes>
       <class name="day1.pack.C1"/>
       <class name="day1.pack.C2"/>
+      <class name="day1.pack.C3"/>
       
     </classes>
   </test> <!-- Test -->
